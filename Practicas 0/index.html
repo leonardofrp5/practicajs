@@ -16,11 +16,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
         
           <div class="container">
-              <script>
-                   $(document).ready(function(){
-                   $('.modal').modal();
-                     });
-              </script>
+              
        
               <div class="row Contenido">
                   <div class="col s6 offset-s3">
@@ -30,19 +26,25 @@
                                  <form class="col s12 offset-s0">
                                    <div class="row">
                                      <div class="input-field col s12">
-                                        <input id="nombre" id="icon_prefix" type="text" class="validate">
+                                        <input id="nombre"  type="text" class="validate">
                                         <label for="textNombre">Nombre Completo</label>
                                      </div>
 
                                      <script>
-                                       $('#nombre').on('keyup', function(){
-                                         var valor = $('#nombre').val();
-                                         alert("Hola como esta," +" " + valor);
-                                         });
-                                   </script>
+                                       function saludar(){
+
+                                        var dato = (document.getElementById('nombre').value);
+                                        var res = "Hola,  " + dato + " " + "bienvenido";
+
+                                        document.getElementById('res').value=res;
+                                       };
+                                     </script>
 
                                    <div class="col s6 offset-s4">
-                                         <a class="modal-trigger waves-effect waves-light btn" href="#modal1" onclick=" valor()">Saludar</a>
+                                         <a class="modal-trigger waves-effect waves-light btn"  onclick="saludar()">Saludar</a>
+                                   </div>
+                                   <div class="input-field col s12">
+                                        <input type="text" id="res">
                                    </div>
                                  </form>
                               </div>
