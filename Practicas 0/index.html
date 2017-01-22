@@ -2,53 +2,54 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Ejercicio 1</title>
+    <style type="text/css">
+    }
+  .Contenido{
+    margin-top: 8%;
+  }
+  </style>
   </head>
   <body>
         <script src="https://code.jquery.com/jquery-3.1.1.min.js"  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="            crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
         
-        <div class="container">
-        <script>
-                $(document).ready(function(){
+          <div class="container">
+              <script>
+                   $(document).ready(function(){
                    $('.modal').modal();
-                  });
-        </script>
+                     });
+              </script>
+       
+              <div class="row Contenido">
+                  <div class="col s6 offset-s3">
+                      <div class="card">
+                          <div class="card-content">
+                              <div class="row">
+                                 <form class="col s12 offset-s0">
+                                   <div class="row">
+                                     <div class="input-field col s12">
+                                        <input id="nombre" id="icon_prefix" type="text" class="validate">
+                                        <label for="textNombre">Nombre Completo</label>
+                                     </div>
 
-        <div class="row">
-          <div class="col s12 m7">
-           <div class="card">
-            <div class="card-content">
-                <div class="row">
-                    <form class="col s12">
-                         <div class="row">
-                             <div class="input-field col s12">
-                                <i class="material-icons prefix"></i>
-                                <input id="icon_prefix" type="text" class="validate">
-                                <script>
-                                  $var valor = document.getElementById("texto").value;
-                                </script>  
-                                <label for="icon_prefix">Nombre Completo</label>
-                                 
-                                <a class="modal-trigger waves-effect waves-light btn" href="#modal1" >Saludar..</a>
-                                <div id="modal1" class="modal modal-fixed">
-                                    <div class="modal-content">
-                                      <center> <h4>Biemvenido...!</h4> </center>
-                                      <br><br>
-                                      <h5>Hola.... </h5>
-                                    </div>
-                               </div>
+                                     <script>
+                                       $('#nombre').on('keyup', function(){
+                                         var valor = $('#nombre').val();
+                                         alert("Hola como esta," +" " + valor);
+                                         });
+                                   </script>
 
-                             </div>
-                         </div>
-                    </form>
-                </div>
-             </div>
-          </div>
-        </div>
+                                   <div class="col s6 offset-s4">
+                                         <a class="modal-trigger waves-effect waves-light btn" href="#modal1" onclick=" valor()">Saludar</a>
+                                   </div>
+                                 </form>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
       </div>
-      </div>
-
   </body>
 </html>
