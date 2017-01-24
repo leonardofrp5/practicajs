@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ejercicio 3</title>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+ <style type="text/css">
+ 	body{
+ 		background:#e0e0e0;
+ 	}
+ 	.Contenido{
+ 		margin-top: 8%;
+ 	}
+ </style>
+</head>
+<body>
+      
+      <script src="https://code.jquery.com/jquery-3.1.1.min.js"  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="            crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+
+       <nav>
+         <div class="nav-wrapper">
+           <a href="#" class="brand-logo center">Calcular el promedio de notas</a>
+           <ul id="nav-mobile" class="left hide-on-med-and-down">
+           </ul>
+         </div>
+       </nav>
+    <div class="valign-wrapper">
+       <div class="row">
+           <div class="col s12 m12">
+               <div class="card">
+                   <div class="card-content">
+                       <div class="row">
+                         <form class="col s12">
+                            <div class="row">
+                             <div class="input-field col s12">
+                               <i class="material-icons prefix">description</i>
+                               <input id="nota1" type="text" class="validate">
+                               <label for="icon_prefix">Primera Nota</label>
+                             </div>
+                        </div>     
+                        <div class="row">     
+                             <div class="input-field col s12">
+                               <i class="material-icons prefix">description</i>
+                               <input id="nota2" type="tel" class="validate">
+                               <label for="icon_telephone">Segunda Nota</label>
+                             </div>
+                            </div>
+                        <div class="row">     
+                             <div class="input-field col s12">
+                               <i class="material-icons prefix">description</i>
+                               <input id="nota3" type="tel" class="validate">
+                               <label for="icon_telephone">Tercera Nota</label>
+                             </div>
+                            </div>
+                        <div class="row">     
+                             <div class="input-field col s12">
+                               <i class="material-icons prefix">description</i>
+                               <input id="nota4" type="tel" class="validate">
+                               <label for="icon_telephone">Cuarta Nota</label>
+                             </div>
+                            </div>        
+                         </form>
+                       </div>
+                   
+
+                   <script>
+                   	 function Promedio(){
+
+                   	 	var nota1 = Number(document.getElementById('nota1').value);
+                   	 	var nota2 = Number(document.getElementById('nota2').value);
+                   	 	var nota3 = Number(document.getElementById('nota3').value);
+                   	 	var nota4 = Number(document.getElementById('nota4').value);
+
+                   	 	var respuesta =nota1+nota2+nota3+nota4;
+                   	 	var respuesta2 = respuesta / 4;
+                   	 	
+
+                   	 	document.getElementById('respuesta2').value=respuesta2;
+                   	 }
+                   </script>
+
+                   <div class="card-action">
+                        <div class="row">     
+                             <div class="input-field col s12">
+                               <i class="material-icons prefix">done</i>
+                               <input placeholder="" id="respuesta2" type="tel" class="validate" disabled value="">
+                               <label for="icon_telephone"><strong>Total Promedio</strong></label>
+                             </div>
+                        </div> 
+                        <div class="col s6 offset-s2">
+                           <a class="waves-effect waves-light btn" onclick="Promedio()">Calcular</a>
+                       </div>        
+                   </div>
+               </div>
+           </div>
+       </div>
+    </div>
+   </div>
+</body>
+</html>
