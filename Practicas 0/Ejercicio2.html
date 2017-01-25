@@ -13,11 +13,13 @@
  		margin-top: 8%;
  	}
  </style>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+    <script type="text/javascript" src="../js/Ejercicio2.js"></script>
 </head>
 <body>
-       <script src="https://code.jquery.com/jquery-3.1.1.min.js"  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="            crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+       
 
      <nav>
         <div class="nav-wrapper">
@@ -38,38 +40,26 @@
                  <div class="row">
                     <div class="input-field col s12">
                       <i class="material-icons prefix">mode_edit</i>
-                      <input id="valor1" type="text" class="validate">
+                      <input id="txtNumero1" type="text" class="validate">
                       <label for="numero">Ingresa la base</label>
                     </div>
                  </div>    
              <div class="row">
                  <div class="input-field col s12">
                     <i class="material-icons prefix">mode_edit</i>
-                    <input id="valor2" type="tel" class="validate">
+                    <input id="txtNumero2" type="tel" class="validate">
                     <label for="numero">Ingresa la altura</label>
                  </div>
                  </div>
              <div class="row">
                  <div class="input-field col s12">
                     <i class="material-icons prefix">done</i>
-                    <input placeholder="" id="respuesta" type="Text" disabled value="">
+                    <input id="txtRespuesta" type="text" placeholder="" disabled value="">
                     <label for="first_name">El área del rectangulo es</label>
                  </div>
-                 </div>
-
-             <script>
-             	function respuesta(){
-
-             		var valor1 = Number(document.getElementById('valor1').value);
-             		var valor2 = Number(document.getElementById('valor2').value);
-             		var respuesta = valor1*valor2;
-
-             		document.getElementById('respuesta').value=respuesta;
-             	}
-             </script>
-
+             </div>
               <div class="col s6 offset-s2">
-                 <a class="waves-effect waves-light btn" onclick="respuesta()">Calcular</a>
+                 <a id="btnCalcular" class="waves-effect waves-light btn">Calcular</a>
               </div>
                 </form>
              </div>

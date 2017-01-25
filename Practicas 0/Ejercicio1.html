@@ -9,11 +9,13 @@
     margin-top: 8%;
   }
   </style>
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+    <script type="text/javascript" src="../js/Ejercicio1.js"></script>
   </head>
   <body>
-        <script src="https://code.jquery.com/jquery-3.1.1.min.js"  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="            crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+        
         
           <div class="container">
               
@@ -26,25 +28,15 @@
                                  <form class="col s12 offset-s0">
                                    <div class="row">
                                      <div class="input-field col s12">
-                                        <input id="nombre"  type="text" class="validate">
+                                        <input id="txtNombre"  type="text" class="validate">
                                         <label for="textNombre">Nombre Completo</label>
-                                     </div>
-
-                                     <script>
-                                       function saludar(){
-
-                                        var dato = (document.getElementById('nombre').value);
-                                        var res = "Hola,  " + dato + " " + "bienvenido";
-
-                                        document.getElementById('res').value=res;
-                                       };
-                                     </script>
+                                     </div>                                   
 
                                    <div class="col s6 offset-s4">
-                                         <a class="modal-trigger waves-effect waves-light btn"  onclick="saludar()">Saludar</a>
+                                         <a id="btnSaludar" class="modal-trigger waves-effect waves-light btn">Saludar</a>
                                    </div>
                                    <div class="input-field col s12">
-                                        <input type="text" id="res">
+                                        <input type="text" id="txtRespuesta">
                                    </div>
                                  </form>
                               </div>
