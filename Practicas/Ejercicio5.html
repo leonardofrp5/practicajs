@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ejercicio 5</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
+
+	<style type="text/css">
+ 	body{
+ 		background:#e0e0e0;
+ 	}
+ 	.Contenido{
+ 		margin-top: 8%;
+ 	}
+ </style>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+    <script type="text/javascript" src="../js/Ejercicio5.js"></script>
+</head>
+<body>
+       <nav>
+          <div class="nav-wrapper">
+             <a href="#" class="brand-logo center">Conversión de unidades</a>
+             <ul id="nav-mobile" class="left hide-on-med-and-down">
+             </ul>
+          </div>
+       </nav>
+       <div class="valign-wrapper"> 
+         <div class="row">
+           <div class="col s12 m12">
+              <div class="card">
+              <div class="card-content">
+                 <div class="row">
+                    <form class="col s12">
+                   <div class="row">
+                      <div class="input-field col s6">
+                         <i class="material-icons prefix">stay_current_portrait</i>
+                         <input id="txtCentimetros" type="text" class="validate">
+                         <label for="icon_prefix">Centimetros</label>
+                      </div>
+                   <div class="input-field col s6">
+                        <i class="material-icons prefix">done</i>
+                        <input id="txtResultado" type="tel" class="validate" disabled value="">
+                   </div>
+                   </div>
+                   <div class="col s4 offset-s4">
+                     <a id="btnConvertir" class="waves-effect waves-light btn">Convertir</a>
+                   </div>
+                    </form>
+                 </div>
+              </div>
+              </div>
+          </div>
+         </div>
+       </div>
+</body>
+</html>
