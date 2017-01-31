@@ -5,25 +5,22 @@ $(document).ready (function(){
       	var N2 = $('#txtNota2').val();
       	var N3 = $('#txtNota3').val();
 
-      	var suma = N1 * N2;
-      	//var Div = suma/4;
+      	var suma = parseFloat(N1) + parseFloat(N2) + parseFloat	(N3);
+      	var Div = suma/4;
+      	var total = 3 - Div
 
-      	$('#txtResultado').val(suma);
+      	if (total >= 3){
+      		//$("body").html("Llevas pasada la materia" );
+      		alert("Llevas pasada la materia" );
+            
+      	
+      	}else{
+            //$("body").html("En este momento tienes la materia perdida," + " Te falta " + total + " En el examen final");
+            alert("En este momento tienes la materia perdida," + " Te falta " + total + " En el examen final");
+      	}
+      	
       };
       $('#btnCalcular').on("click",resultado);
 });
 
 
-$(document).ready(function(){
-    function respuesta(){
-
-       	var valor1 = $('#txtNumero1').val();
-   		var valor2 = $('#txtNumero2').val();
-       	var area = valor1*valor2;
-         
-        $('#txtRespuesta').val(area);
-     };
-
-      $('#btnCalcular').on("click",respuesta);
-
-});

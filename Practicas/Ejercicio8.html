@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Ejercicio 5</title>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
+	<title>Ejercicio 8</title>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
 
 	<style type="text/css">
  	body{
@@ -15,16 +15,17 @@
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="            crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
-    <script type="text/javascript" src="../js/Ejercicio5.js"></script>
+    <script type="text/javascript" src="../js/Ejercicio8.js"></script>
 </head>
 <body>
        <nav>
           <div class="nav-wrapper">
-             <a href="#" class="brand-logo center">Conversión de unidades</a>
+             <a href="#" class="brand-logo center">Determinar si el número es Par o Impar</a>
              <ul id="nav-mobile" class="left hide-on-med-and-down">
              </ul>
           </div>
        </nav>
+
        <div class="valign-wrapper"> 
          <div class="row">
            <div class="col s12 m12">
@@ -33,19 +34,19 @@
                  <div class="row">
                     <form class="col s12">
                    <div class="row">
-                      <div class="input-field col s6">
+                      <div class="input-field col s12">
                          <i class="material-icons prefix">stay_current_portrait</i>
-                         <input id="txtCentimetros" type="text" class="validate">
-                         <label for="icon_prefix">Centimetros</label>
+                         <input id="txtNumero" type="text" class="validate">
+                         <label for="icon_prefix">Ingrese un numero</label>
                       </div>
-                   <div class="input-field col s6">
-                        <i class="material-icons prefix">done</i>
-                        <input id="txtResultado" type="text" class="validate" disabled value="">
+                   </div>  
+                  
+                   <div class="row">
+                        <div class="col s6 offset-s2">
+                           <a id="btnCosultar" data-target="modal1" class="waves-effect waves-light btn">Consultar</a>
+                        </div>
                    </div>
-                   </div>
-                   <div class="col s4 offset-s4">
-                     <a id="btnConvertir" class="waves-effect waves-light btn">Convertir</a>
-                   </div>
+                   
                     </form>
                  </div>
               </div>
@@ -53,5 +54,6 @@
           </div>
          </div>
        </div>
+
 </body>
 </html>
